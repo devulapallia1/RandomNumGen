@@ -1,11 +1,91 @@
-Description: Created a test automation framework in Java using Selenium WebDriver and TestNG. The framework will test a demo web application, featuring random number generator ensuring it covers all the functional requirements.
-Key Features of the Framework: 
-Modular Design: Separate layers for test scripts, utility functions, and test data. 
-Data-Driven Testing: Parameterize test cases using Excel or JSON files. 
-Cross-Browser Testing: Support testing on Chrome, Firefox, and Edge. 
-Reporting: Generate detailed HTML reports using TestNG. 
-CI/CD Integration: Set up integration with GitHub Actions for automated test runs. 
-The files uploaded are 
-1.RandomNumGen.java 
-2.RandomNumJUnit.java 
-3.RandomNumTestNG.java
+# Test Automation Framework
+
+A robust test automation framework built in Java using Selenium WebDriver and TestNG. This framework is designed to test a demo web application that features a random number generator. The framework ensures comprehensive functional testing and integrates modern automation best practices.
+
+## Key Features
+
+### 1. **Modular Design**
+- The framework is structured into distinct layers:
+  - **Test Scripts**: Contains the test cases for various functionalities.
+  - **Utility Functions**: Reusable methods to support test execution.
+  - **Test Data**: Externalized test data to ensure flexibility and reusability.
+
+### 2. **Data-Driven Testing**
+- Test cases are parameterized using:
+  - Excel files
+  - JSON files
+
+### 3. **Cross-Browser Testing**
+- Supports testing across multiple browsers:
+  - Google Chrome
+  - Mozilla Firefox
+  - Microsoft Edge
+
+### 4. **Reporting**
+- Generates detailed HTML reports using TestNG.
+- Includes logs for better traceability of test results.
+
+### 5. **CI/CD Integration**
+- Seamlessly integrates with GitHub Actions for automated test execution.
+- Enables continuous feedback on code changes.
+
+## Files in the Project
+
+### 1. `RandomNumGen.java`
+- Implements the logic for generating random numbers in the demo web application.
+
+### 2. `RandomNumJUnit.java`
+- Contains JUnit test cases for validating the random number generator.
+
+### 3. `RandomNumTestNG.java`
+- Contains TestNG test cases to ensure broader testing functionality and supports advanced features like parallel execution.
+
+## How to Run
+
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   ```
+
+2. Navigate to the project directory:
+   ```bash
+   cd test-automation-framework
+   ```
+
+3. Install dependencies and configure the environment as needed.
+
+4. Run the TestNG test cases:
+   ```bash
+   mvn test
+   ```
+
+5. View the TestNG HTML report:
+   - Reports are generated in the `test-output` folder.
+
+## Project Structure
+```
+|-- RandomNumGen.java
+|-- RandomNumJUnit.java
+|-- RandomNumTestNG.java
+|-- test-data/
+|-- utilities/
+|-- test-output/
+```
+
+## Technologies Used
+- **Programming Language**: Java
+- **Test Frameworks**: Selenium WebDriver, TestNG, JUnit
+- **Build Tool**: Maven
+- **Version Control**: GitHub
+
+## Future Enhancements
+- Add support for mobile browser testing.
+- Enhance reporting with screenshots for failed test cases.
+- Integrate with tools like Jenkins for advanced CI/CD pipelines.
+
+## Contributing
+Contributions are welcome! Please open issues or submit pull requests to suggest improvements or report bugs.
+---
+
+Happy Testing!
+
