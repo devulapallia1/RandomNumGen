@@ -1,4 +1,4 @@
-# Test Automation Framework
+# Random Number Generator
 
 A robust test automation framework built in Java using Selenium WebDriver and TestNG. This framework is designed to test a demo web application that features a random number generator. The framework ensures comprehensive functional testing and integrates modern automation best practices.
 
